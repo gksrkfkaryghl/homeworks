@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homework</title>
+        <meta charset="utf-8">
+        
+        <!--
+            Q1-answer
+            : 사람의 몸으로 비유를 하자면,
+                html-'몸'
+                cdd -몸에 입히는 '옷'
+                JavaScript-FrontEnd - 눈, 코, 입 등 외부와 소통하고 반응하며, 또 그 반응을 볼 수 있는 '몸의 감각기관'
+                JavaScript-BackEnd - 신체 내부에서 끊임없이 동적으로 반응하며 신체를 컨트롤하는 '두뇌, 장기기관'
+        -->
+    </head>
+    <body>
+        <!--h1~6: 문구의 크기를 6분위로 나눈다. 일반적으로 상위에서 하위 카테고리로 갈수록 h1->h6 으로 글씨를 작게 함으로 구별함-->
+        <h1>안녕</h1>
+        <h2>날 소개하지</h2>
+        <h3>이름은</h3>
+        <h4>김하온</h4>
+        <h5>직업은</h5>
+        <h6>traveler</h6>
+
+        <!--<p>:html문서에서 문단(paragraph)을 구분해준다.-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, iusto. 
+            Sapiente iure debitis eligendi repellendus sequi obcaecati reprehenderit ratione possimus adipisci aspernatur? 
+            Aspernatur dolor soluta illo temporibus debitis harum sed adipisci tempore nisi nostrum dolore, vero hic, voluptatum aut quam enim illum, 
+            est ea eveniet numquam totam. Consequatur, autem similique vero natus aspernatur tempora unde vel fuga, at sed eos exercitationem? Quibusdam, a. Dolor facilis, 
+            fugiat officia possimus quod quae incidunt amet in quam recusandae non eum obcaecati quaerat adipisci. 
+            Qui rem dolore tempora aperiam quos voluptatum eligendi quibusdam deserunt vero, unde, omnis maiores ut ducimus, esse quidem illo! Magnam?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat placeat, voluptatem quod quia, 
+            ullam dignissimos aliquid dolorum perferendis harum itaque voluptate molestias tempore voluptates odit aperiam et illo dolor atque 
+             mporroagni earum asperiores ipsa facilis aut! Deleniti aspernatur, 
+            unde quod corporis ut itaque quaerat saepe nisi quibusdam sunt doloremque.
+        </p>
+
+        <!--<a>: 'anchor'를 뜻하는 a는 링크를 첨부하는 tag이다. 아래 예시의 경우, href라는 attribute에 이동하시키고자 하는 주소를 넣으면 '초록창'을 클릭했을 때 해당 웹페이지로 이동한다.-->
+        <a href="https://www.naver.com/">초록창</a>
+       
+        <!--div(division)와 span은 둘다 영역을 설정해주는 tag다. 하지만 div는 blook속성, span은 inline 속성이라는 점에서 차이가 있다. 아래 예시의 경우, div냐 span이냐에 따라서 background-color의 적용범위가 달라지고,
+        여러개의 div와 span을 배열시킬 경우에도 span은 div와 달리 줄바꿈이 일어나지 않고 옆에 배열이 된다.-->
+        <div style='background-color:green'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit nemo obcaecati labore pariatur illum quam, 
+            iusto eum autem delectus velit aliquid dicta temporibus vero? Ad modi exercitationem vitae omnis officia magnam ratione quasi itaque, 
+            neque accusamus? Mollitia, autem maxime adipisci soluta pariatur amet exercitationem optio rem fuga repellat saepe?
+        </div><br>
+        <span style='background-color:green'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit nemo obcaecati labore pariatur illum quam, 
+            iusto eum autem delectus velit aliquid dicta temporibus vero? Ad modi exercitationem vitae omnis officia magnam ratione quasi itaque, 
+            neque accusamus? Mollitia, autem maxime adipisci soluta pariatur amet exercitationem optio rem fuga repellat saepe?
+        </span><br><br>
+
+        <div style="background-color: yellow">div1</div>
+        <div style="background-color: yellow">div2</div>
+        <div style="background-color: yellow">div3</div>
+
+        <span style="background-color: skyblue">span1</span>
+        <span style="background-color: skyblue">span2</span>
+        <span style="background-color: skyblue">span3</span>
+        
+        <!--ol과 ul, li는 list를 나열하는 tag이다. ol과 ul은 li의 부모로써 ol일 경우, list에 숫자가 부여되고(ordered list) ul일 경우 숫자없이 list된다(unordered list).-->
+        <ol>
+            <li>사과</li>
+            <li>복숭아</li>
+            <li>오렌지</li>
+        </ol>
+        <ul>
+            <li>사과</li>
+            <li>복숭아</li>
+            <li>오렌지</li>
+        </ul>
+        
+        <!--<button>: 버튼을 생성함. 브라우저마다 각기 다른값을 지정해줄 수 있기에 type 속성을 지정해주는 것이 좋으며, 아래와 같이 onclick등으로 효과를 지정해줄 수 있다.-->
+        <button type="button" onclick="alert('God bless you')">클릭me</button>
+        <br><br>
+        <!--<img>: 이미지를 삽입해줌-->
+        <img src="wolf.jpg" width="500px" height="500px">
+
+        <!--<input>,<form>,<textarea>: <input>은 text, password 등 여러 type이 있으며 value, placeholder 등의 여러 attribute로 기능을 추가할 수 있음. submit type을 클릭하면 form에 기재된 url로 입력된 정보들이 전송되며, 
+            name 등의 attribete를 통해 각 정보를 식별함. <textarea>는 <input>과 유사하나 형식이 약간 차이가 있으며, 입력칸을 조정하는 것이 자유로워 장문의 정보를 입력하기에 적합함.-->
+        <form action="~~url~~">
+            id: <input type="text" name="id" value="홍길동" placeholder="id"><br>
+            pw: <input type="password" name="password" placeholder="password"><br>
+            detail: <textarea name="description" cols="30" rows="10" placeholder="description">asdfasdf</textarea><br>
+
+            <!--<select>: 선택을 할 수 있게 하는 tag. 하위의 <option>들 중에 선택을 하고, selected attribute로 기본값 지정이 가능하다.-->
+            <select name="과일">
+                <option value="사과">사과</option>
+                <option value="복숭아" selected="selected">복숭아</option>
+                <option value="포도">포도</option>
+            </select><br>
+            <input type="submit" value="제출">
+        </form>
+
+        <!--<table>: table, 즉 표를 만들어준다. <tr>과 <td>는 각각 table의 행(table row)과 열(table data)을 의미한다. 
+            추가적으로 아래 예시와 같이 colspan, rowspan 등의 attribute를 사용해서 모양을 바꿀 수 있으며, css를 사용해 테두리 선을 만드는 등의 효과를 줄 수 있다.-->
+        <table>
+            <tr>
+                <td>이름</td><td>성별</td><td>나이</td><td>회비</td>
+            </tr>
+            <tr>
+                <td>철수</td><td>남</td><td>21</td><td>5000원</td>
+            </tr>
+            <tr>
+                <td>영희</td><td>여</td><td>23</td><td>3000원</td>
+            </tr>
+            <tr>
+                <td colspan="3">합계</td><td>8000원</td>
+            </tr>
+        </table>
+
+
+    </body>
+</html>
